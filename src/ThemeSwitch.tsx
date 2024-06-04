@@ -1,8 +1,8 @@
-import { useThemeContext } from "./context";
+import { useThemeContext } from "./context/ThemeContext";
  
 export const ThemeSwitch = () => {
   const [theme, setTheme] = useThemeContext();
- console.log(theme)
+  console.log(theme)
   return (
     <div>
       <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>

@@ -1,6 +1,8 @@
 import './App.css'
 import { ThemeSwitch } from './ThemeSwitch'
-import { ThemeProvider } from './context'
+import { UserSwitch } from './UserSwitch'
+import { LoginProvider } from './context/LoginContext'
+import { ThemeProvider } from './context/ThemeContext'
 
 function App() {
 
@@ -9,6 +11,9 @@ function App() {
       <ThemeProvider>
         <ThemeSwitch></ThemeSwitch>
       </ThemeProvider>      
+      <LoginProvider>
+        <UserSwitch></UserSwitch>
+      </LoginProvider>
     </>
   )
 }
